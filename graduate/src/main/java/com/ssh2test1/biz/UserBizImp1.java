@@ -15,7 +15,6 @@ public class UserBizImp1 implements UserBiz {
 		return userDAO.search(condition);
 	}
 
-	@Override
 	public void register(Users user) { // 注册用户
 		// TODO Auto-generated method stub
 		userDAO.register(user);

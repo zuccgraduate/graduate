@@ -29,7 +29,6 @@ public class UserDAOImp1 extends HibernateDaoSupport implements UserDAO {
 				});
 	}
 
-	@Override
 	public void register(Users user) {
 		// TODO Auto-generated method stub
 		super.getHibernateTemplate().save(user);
