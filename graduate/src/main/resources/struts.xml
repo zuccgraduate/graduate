@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="struts2" extends="struts-default">
+		<action name="doLogin" class="umAction" >
+			<result name="error">error.jsp</result>
+			<result name="success">main.html</result>
+			<result name="fail">fail.jsp</result>
+		</action>
+		<action name="addUser" class="user" method="addUser">
+			<result type="redirect" name="success">/main.html</result>
+		</action>
+		<action name="stateChoice" class="state" method="stateChoice">
+		<result type="redirect" name="success">/test/text.jsp</result>
+		<result  name="fail">main.html</result>
+		</action>
+		   
+	</package>
+</struts>
