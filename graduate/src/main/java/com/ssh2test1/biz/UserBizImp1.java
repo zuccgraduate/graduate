@@ -16,7 +16,6 @@ public class UserBizImp1 implements UserBiz {
 	}
 
 	public void register(Users user) { // 注册用户
-		// TODO Auto-generated method stub
 		userDAO.register(user);
 
 	}
